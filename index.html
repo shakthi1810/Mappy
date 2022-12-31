@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="row">
+        <div class="col-4">
+          <div class="event-body">
+            <div class="logo">
+              <img src="./logo.png" width="100" alt="" />
+              <button id="btn" type="button">Reset</button>
+            </div>
+            <form action="#" class="form form_hide">
+              <div class="form-row">
+                <label for="">Type</label>
+                <select name="" id="inputType" value="Running">
+                  <option value="Running">Running</option>
+                  <option value="Cycling">Cycling</option>
+                  <option value="Swiming">Swiming</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="">Distance</label>
+                <input id="distance" type="text" placeholder="km" />
+              </div>
+              <div class="form-row">
+                <label for="">Duration</label>
+                <input id="duration" type="text" placeholder="min" />
+              </div>
+              <div class="form-row run">
+                <label for="">Cadence</label>
+                <input id="running" type="text" placeholder="step/min" />
+              </div>
+              <div class="form-row row_hide cycle">
+                <label for="">Elev Gain</label>
+                <input id="cycling" type="text" placeholder="Meters" />
+              </div>
+              <div class="form-row row_hide swim">
+                <label for="">Dis Cover</label>
+                <input id="swiming" type="text" placeholder="Meter" />
+              </div>
+              <!-- <input type="submit" /> -->
+            </form>
+            <ul class="workout-list">
+              <!-- <li>
+                <h2>Running On April 14</h2>
+                <div class="lists">
+                  <div class="workout-detail">
+                    <span class="workout-icon">🏃</span>
+                    <span class="workout-value">5.2</span>
+                    <span class="workout-unit">km</span>
+                  </div>
+                  <div class="workout-detail">
+                    <span class="workout-icon">⏱️</span>
+                    <span class="workout-value">5.2</span>
+                    <span class="workout-unit">min</span>
+                  </div>
+                  <div class="workout-detail">
+                    <span class="workout-icon">⚡</span>
+                    <span class="workout-value">5.2</span>
+                    <span class="workout-unit">min/km</span>
+                  </div>
+                  <div class="workout-detail">
+                    <span class="workout-icon">👣</span>
+                    <span class="workout-value">5.2</span>
+                    <span class="workout-unit">spm</span>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-8">
+          <div style="width: 100%; height: 100vh" id="map"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/leaflet/leaflet.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

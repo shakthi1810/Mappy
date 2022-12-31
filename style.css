@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.body {
+  height: 100vh;
+  overflow: hidden;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.col-4 {
+  width: 25%;
+  max-width: 25%;
+  height: 100%;
+}
+
+.col-8 {
+  width: 75%;
+  max-width: 75%;
+  height: 100%;
+}
+
+.event-body {
+  height: 100%;
+  background-color: #333;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo button {
+  background-color: #fff;
+  padding: 6px 16px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  border: none;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  background: #404040;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.form :is(input, select) {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0;
+  padding: 5px;
+}
+
+.form label {
+  color: #fff;
+  padding: 5px 0;
+  min-width: 70px;
+  display: block;
+  font-size: 14px;
+}
+
+.form .form-row {
+  display: flex;
+  align-items: center;
+}
+
+.form .form-row.row_hide {
+  display: none;
+}
+
+.form_hide {
+  display: none;
+}
+
+.mapPopup {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.mapPopup.running-popup {
+  border-left: 5px solid green;
+}
+
+.mapPopup.swimming-popup {
+  border-left: 5px solid blue;
+}
+
+.mapPopup.cycling-popup {
+  border-left: 5px solid orangered;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background-color: #333;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.leaflet-popup-content {
+  margin: 10px;
+}
+
+.leaflet-popup-content,
+.leaflet-popup-close-button span {
+  color: #fff;
+}
+.workout-list li {
+  background: #404040;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  list-style: none;
+}
+.workout-list li h2 {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.workout-list li .lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
+}
+
+.workout-detail {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #ccc;
+}
